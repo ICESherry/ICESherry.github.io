@@ -18,7 +18,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="test"/>
+      <meta property="og:title" content="浏览器的工作原理"/>
   
   <!--Open Graph Description-->
   
@@ -46,7 +46,7 @@
     </script>
   <!-- Title -->
   
-  <title>test - shelly</title>
+  <title>浏览器的工作原理 - shelly</title>
 
 
   <link rel="shortcut icon" href="/favicon.ico">
@@ -165,7 +165,7 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            test
+            浏览器的工作原理
             
           </h1>
          
@@ -175,35 +175,22 @@
           </p>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <p><img src="http://image.winkspace.site/55ffc7529f1920c62ce345cad7e2c6bd.jpg" alt="avatar"><br><a id="more"></a></p>
-<h3 id="代码引用"><a href="#代码引用" class="headerlink" title="代码引用"></a>代码引用</h3><p><code>int a=1</code></p>
-<h3 id="代码引用-代码块"><a href="#代码引用-代码块" class="headerlink" title="代码引用-代码块"></a>代码引用-代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">printf(&quot;hello,Markdown.&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="使用表格"><a href="#使用表格" class="headerlink" title="使用表格"></a>使用表格</h3><table>
-<thead>
-<tr>
-<th>Tables</th>
-<th style="text-align:center">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>col 3 is</td>
-<td style="text-align:center">right-aligned</td>
-<td style="text-align:right">$1600</td>
-</tr>
-<tr>
-<td>col 2 is</td>
-<td style="text-align:center">centered</td>
-<td style="text-align:right">$12</td>
-</tr>
-<tr>
-<td>zebra stripes</td>
-<td style="text-align:center">are neat</td>
-<td style="text-align:right">$1</td>
-</tr>
-</tbody>
-</table>
+          <p><img src="http://image.winkspace.site/2011110316262567.png" alt="avatar"><br><a id="more"></a></p>
+<h3 id="要知道浏览器的工作原理，首先要了解浏览器的结构。只有了解其主要结构，才能学庖丁解牛，一步步深入挖掘它的工作原理。"><a href="#要知道浏览器的工作原理，首先要了解浏览器的结构。只有了解其主要结构，才能学庖丁解牛，一步步深入挖掘它的工作原理。" class="headerlink" title="要知道浏览器的工作原理，首先要了解浏览器的结构。只有了解其主要结构，才能学庖丁解牛，一步步深入挖掘它的工作原理。"></a>要知道浏览器的工作原理，首先要了解浏览器的结构。只有了解其主要结构，才能学庖丁解牛，一步步深入挖掘它的工作原理。</h3><h2 id="一、浏览器的结构"><a href="#一、浏览器的结构" class="headerlink" title="一、浏览器的结构"></a>一、浏览器的结构</h2><p>简单说，浏览器有两部分构成：shell和内核。<br>shell：浏览器的外壳，给用户提供操作界面和参数设置等，主要是通过调用内核来完成任务 的。<br>内核：内核是基于标记语言显示内容的程序或模块，对于一个前端工作者来说，了解每个浏览器的内核以及其内核的作用是必须的。</p>
+<p><strong>目前五大主流浏览器和四大内核主要有：</strong></p>
+<ul>
+<li>IE浏览器内核：Trident内核，也是俗称的IE内核</li>
+<li>Opera浏览器内核：最初是自己的Presto内核，后来是Webkit，现在是Blink内核；</li>
+<li>Safari浏览器内核：Webkit内核；</li>
+<li>Firefox浏览器内核：Gecko内核，俗称Firefox内核；</li>
+<li>Chrome浏览器内核：统称为Chromium内核或Chrome内核，以前是Webkit内核，现在是Blink内核<br><br><br>其他一些非主流浏览器我也介绍一下吧：</li>
+<li>360浏览器、猎豹浏览器内核：IE+Chrome双内核；</li>
+<li>搜狗、遨游、QQ浏览器内核：Trident（兼容模式）+Webkit（高速模式）；</li>
+<li>百度浏览器、世界之窗内核：IE内核；</li>
+<li>2345浏览器内核：以前是IE内核，现在也是IE+Chrome双内核；</li>
+</ul>
+<p><strong><strong>浏览器一般由一下几个部分组成：</strong></strong><br><img src="http://image.winkspace.site/无标题.png" alt="avatar"></p>
+<h3 id="主流程"><a href="#主流程" class="headerlink" title="主流程"></a>主流程</h3><p>渲染引擎首先通过网络获得所请求文档的内容，解析html来创建一颗dom树——&gt;然后解析外部的样式或者style标签里面的样式，有这些样式和html可见性指令组成的被称之为render树，render树创建好之后——&gt;会执行布局过程，这一步是用来确定每个节点的确切的位置——&gt;最后一步就是绘制这棵树，将这颗render树呈现在浏览器的渲染引擎内。</p>
 
         </div>
       </article>
